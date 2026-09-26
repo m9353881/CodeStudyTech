@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStudyTech - Programming Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>&lt;/&gt;</span> CodeStudyTech
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#topics">Topics</a>
+                <a href="#techniques">Study Techniques</a>
+                <a href="#quiz">Quiz</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                STEM • PROGRAMMING
+            </div>
+
+            <h1>
+                Learn Programming<br>
+                <span>Smarter, Not Harder.</span>
+            </h1>
+
+            <p>
+                An interactive learning platform designed to help students
+                understand programming concepts and discover effective study techniques.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#topics" class="btn primary-btn">
+                    Start Learning
+                </a>
+
+                <a href="#quiz" class="btn secondary-btn">
+                    Take Quiz
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Topics -->
+    <section id="topics" class="section">
+
+        <div class="section-header">
+
+            <span class="section-label">01 • LEARN</span>
+
+            <h2>
+                Programming<br>
+                <span>Topics</span>
+            </h2>
+
+            <p>
+                Learn programming through IPO, flowcharts,
+                pseudocode and Python programming.
+            </p>
+
+        </div>
+
+
+        <div class="topics-grid">
+
+
+            <!-- =========================
+                 TOPIC 01: SEQUENCE
+            ========================= -->
+
+            <div class="topic-card">
+
+                <div class="topic-number">01</div>
+
+                <h3>Sequence</h3>
+
+                <p>
+                    Learn how instructions are executed
+                    step by step in a specific order.
+                </p>
+
+                <div class="topic-content">
+
+                    <strong>Example: Calculate the area of a rectangle</strong>
+
+                    <h4>IPO (Input → Process → Output)</h4>
+
+                    <p>
+                        <b>Input:</b> Length, Width
+                    </p>
+
+                    <p>
+                        <b>Process:</b>
+                        Calculate Area based on Length and Width
+                    </p>
+
+                    <p>
+                        <b>Output:</b> Area
+                    </p>
+
+                    <h4>Pseudocode</h4>
+
+                    <pre class="topic-code">start
+read length, width
+area = length * width
+print area
+stop</pre>
+
+                    <h4>Python Code</h4>
+
+                    <pre class="topic-code">length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+area = length * width
+print("Area:", area)</pre>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 TOPIC 02: SELECTION
+            ========================= -->
+
+            <div class="topic-card">
+
+                <div class="topic-number">02</div>
+
+                <h3>Selection</h3>
+
+                <p>
+                    Learn how programs make decisions
+                    based on conditions.
+                </p>
+
+                <div class="code-example">
+                    <code>Single Selection/ Dual Selection/ Multiple Selection</code>
+                </div>
+
+                <div class="topic-content">
+
+                    <strong>Example: Determine whether a student passes</strong>
+
+                    <h4>IPO (Input → Process → Output)</h4>
+
+                    <p>
+                        <b>Input:</b> Mark
+                    </p>
+
+                    <p>
+                        <b>Process:</b>
+                        Determine "Pass" or "Fail" based on Mark
+                    </p>
+
+                    <p>
+                        <b>Output:</b> "Pass" or "Fail"
+                    </p>
+
+                    <h4>Pseudocode</h4>
+
+                    <pre class="topic-code">start
+read mark
+if mark >= 40 
+    print "Pass"
+else
+    print "Fail"
+end if
+stop</pre>
+
+                    <h4>Python Code</h4>
+
+                    <pre class="topic-code">mark = float(input("Enter mark: "))
+if mark >= 40:
+    print("Pass")
+else:
+    print("Fail")</pre>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 TOPIC 03: REPETITION - COUNTER CONTROLLED
+            ========================= -->
+
+            <div class="topic-card">
+
+                <div class="topic-number">03</div>
+
+                <h3>Repetition</h3>
+
+                <p>
+                    Learn how loops repeat instructions
+                    until a condition is met.
+                </p>
+
+                <div class="code-example">
+                    <code>Counter Controlled</code>
+                </div>
+
+                <div class="topic-content">
+
+                    <strong>
+                        Example: Display average mark for 5 students
+                    </strong>
+
+                    <h4>IPO (Input → Process → Output)</h4>
+
+                    <p>
+                        <b>Input:</b> mark for 5 times
+                    </p>
+
+                    <p>
+                        <b>Process:</b>
+                        Repeat calculate total based on mark for 5 times
+                        <br>Calculate average based on total</br>
+                    </p>
+
+                    <p>
+                        <b>Output:</b> average
+                    </p>
+
+                    <h4>Pseudocode</h4>
+
+                    <pre class="topic-code">start
+i = 0
+total = 0                  
+while i &lt; 5
+    read mark
+    total = total + mark
+    i = i + 1
+endwhile                  
+average = total / 5
+print average                   
+stop</pre>
+
+                    <h4>Python Code</h4>
+
+                    <pre class="topic-code">total = 0
+i = 0                    
+while i &lt; 5:
+    mark = float(input("Enter mark: "))
+    total = total + mark
+    i = i + 1                 
+average = total / 5                   
+print("Average mark =", average)</pre>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 TOPIC 04: REPETITION - SENTINEL CONTROLLED
+            ========================= -->
+
+            <div class="topic-card">
+
+                <div class="topic-number">04</div>
+
+                <h3>Repetition</h3>
+
+                <p>
+                    Learn how loops repeat instructions
+                    until a condition is met.
+                </p>
+
+                <div class="code-example">
+                    <code>Sentinel Controlled</code>
+                </div>
+
+                <div class="topic-content">
+
+                    <strong>
+                        Example: Display total miles for a few days until -1 is entered
+                    </strong>
+
+                    <h4>IPO (Input → Process → Output)</h4>
+
+                    <p>
+                        <b>Input:</b> miles for several times until -1 entered
+                    </p>
+
+                    <p>
+                        <b>Process:</b>
+                        Repeat calculate total based on miles for several times until -1 entered
+                    </p>
+
+                    <p>
+                        <b>Output:</b> total
+                    </p>
+
+                    <h4>Pseudocode</h4>
+
+                    <pre class="topic-code">start
+total = 0
+read miles                  
+while miles != -1
+    total = total + miles
+    read miles
+endwhile                  
+print total                   
+stop</pre>
+
+                    <h4>Python Code</h4>
+
+                    <pre class="topic-code">total = 0
+miles = float(input("Enter miles (-1 to stop): "))
+while miles != -1:
+    total = total + miles
+    miles = float(input("Enter miles (-1 to stop): "))
+print("Total miles =", total)</pre>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Questionnaire -->
+    <section id="techniques" class="section questionnaire-section">
+
+        <div class="section-header">
+            <span class="section-label">03 • DISCOVER</span>
+
+            <h2>
+                Find Your<br>
+                <span>Study Technique</span>
+            </h2>
+
+            <p>
+                Answer these questions to discover which programming
+                study method suits you.
+            </p>
+        </div>
+
+
+        <div class="quiz-container">
+
+            <div class="question-box">
+
+                <h3>Question 1</h3>
+
+                <p>
+                    How do you usually study programming?
+                </p>
+
+                <label>
+                    <input type="radio" name="q1" value="pomodoro">
+                    I study for a short period and take breaks.
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="recall">
+                    I try to remember what I learned without notes.
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="blurting">
+                    I write down everything I remember.
+                </label>
+
+            </div>
+
+
+            <div class="question-box">
+
+                <h3>Question 2</h3>
+
+                <p>
+                    What do you do when you forget a programming concept?
+                </p>
+
+                <label>
+                    <input type="radio" name="q2" value="pomodoro">
+                    Take a short break and try again.
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="recall">
+                    Try to recall the concept from memory.
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="blurting">
+                    Write down what I remember first.
+                </label>
+
+            </div>
+
+
+            <div class="question-box">
+
+                <h3>Question 3</h3>
+
+                <p>
+                    Which activity sounds most useful to you?
+                </p>
+
+                <label>
+                    <input type="radio" name="q3" value="pomodoro">
+                    Short focused coding sessions.
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="recall">
+                    Testing myself without notes.
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="blurting">
+                    Writing down everything I know.
+                </label>
+
+            </div>
+
+
+            <div class="question-box">
+
+                <h3>Question 4</h3>
+
+                <p>
+                    How do you prefer to improve your programming knowledge?
+                </p>
+
+                <label>
+                    <input type="radio" name="q4" value="pomodoro">
+                    By studying consistently.
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="recall">
+                    By testing my memory.
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="blurting">
+                    By writing what I understand.
+                </label>
+
+            </div>
+
+
+            <button class="btn primary-btn" onclick="calculateRecommendation()">
+                Find My Study Technique
+            </button>
+
+        </div>
+
+
+        <!-- Result -->
+        <div id="result" class="result-box">
+
+            <div id="result-icon" class="result-icon"></div>
+
+            <h3 id="result-title"></h3>
+
+            <p id="result-description"></p>
+
+            <div id="result-tips"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Programming Quiz -->
+    <section id="quiz" class="section quiz-section">
+
+        <div class="section-header">
+            <span class="section-label">04 • TEST</span>
+
+            <h2>
+                Programming<br>
+                <span>Quiz</span>
+            </h2>
+
+            <p>
+                Test your understanding of basic programming concepts.
+            </p>
+        </div>
+
+
+        <div class="programming-quiz">
+
+            <!-- Question 1 -->
+            <div class="quiz-question">
+
+                <h3>1. What will this code output?</h3>
+
+                <div class="code-box">
+                    x = 5<br>
+                    print(x)
+                </div>
+
+                <label>
+                    <input type="radio" name="quiz1" value="A">
+                    A. 0
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz1" value="B">
+                    B. 5
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz1" value="C">
+                    C. x
+                </label>
+
+            </div>
+
+
+            <!-- Question 2 -->
+            <div class="quiz-question">
+
+                <h3>2. Which statement is used to make a decision?</h3>
+
+                <label>
+                    <input type="radio" name="quiz2" value="A">
+                    A. if / else
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz2" value="B">
+                    B. print
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz2" value="C">
+                    C. loop
+                </label>
+
+            </div>
+
+
+            <!-- Question 3 -->
+            <div class="quiz-question">
+
+                <h3>3. Which structure is used to repeat code?</h3>
+
+                <label>
+                    <input type="radio" name="quiz3" value="A">
+                    A. Variable
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz3" value="B">
+                    B. Loop
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz3" value="C">
+                    C. Function
+                </label>
+
+            </div>
+
+
+            <!-- Question 4 -->
+            <div class="quiz-question">
+
+                <h3>4. What is debugging?</h3>
+
+                <label>
+                    <input type="radio" name="quiz4" value="A">
+                    A. Creating a website
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz4" value="B">
+                    B. Finding and fixing errors
+                </label>
+
+                <label>
+                    <input type="radio" name="quiz4" value="C">
+                    C. Writing comments
+                </label>
+
+            </div>
+
+
+            <button class="btn primary-btn" onclick="checkQuiz()">
+                Submit Quiz
+            </button>
+
+            <div id="quiz-result" class="quiz-result"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                <span>&lt;/&gt;</span> CodeStudyTech
+            </div>
+
+            <p>
+                Making programming learning simpler, smarter and more effective.
+            </p>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 CodeStudyTech | STEM Innovation Project</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
