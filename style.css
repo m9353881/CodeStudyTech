@@ -839,3 +839,224 @@ footer {
         padding-right: 25px;
     }
 }
+
+/* =========================
+   STUDY RESULT TIPS
+========================= */
+
+/* Pomodoro Grid */
+.study-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+
+/* General Tip Card */
+.tip-card {
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #e2ebe4;
+    background: #f8faf8;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Learning / Practice Card */
+.tip-card.step {
+    background: #f7faf7;
+    border-color: #dce8df;
+}
+
+
+/* Break Card */
+.tip-card.break {
+    background: #faf9f4;
+    border-color: #ebe5cf;
+}
+
+
+/* Time Badge */
+.badge {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+
+    background: #e2ebe4;
+
+    color: #708A74;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* Break Badge */
+.tip-card.break .badge {
+    background: #f1ead2;
+    color: #9a7b32;
+}
+
+
+/* Card Title */
+.tip-card h4 {
+    margin-bottom: 12px;
+
+    color: #2f4033;
+
+    font-size: 20px;
+}
+
+
+/* Card Text */
+.tip-card p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* Card List */
+.tip-card ul {
+    padding-left: 20px;
+
+    margin: 0;
+
+    color: #555;
+}
+
+.tip-card li {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ACTIVE RECALL & BLURTING
+========================= */
+
+.study-tips {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-top: 25px;
+
+    text-align: left;
+}
+
+
+.tip-step {
+    background: #f8faf8;
+
+    border: 1px solid #e2ebe4;
+
+    border-radius: 14px;
+
+    padding: 18px 20px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.tip-step:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+.tip-step h4 {
+    margin-bottom: 8px;
+
+    color: #708A74;
+
+    font-size: 17px;
+}
+
+
+.tip-step p {
+    margin: 5px 0;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.tip-step ul {
+    margin-top: 8px;
+
+    padding-left: 20px;
+
+    color: #555;
+}
+
+
+.tip-step li {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* Bold text */
+.tip-step b {
+    color: #2f4033;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .study-tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card {
+        padding: 18px;
+    }
+
+    .tip-card h4 {
+        font-size: 18px;
+    }
+
+    .tip-step {
+        padding: 16px;
+    }
+
+}
